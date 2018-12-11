@@ -1,9 +1,10 @@
 <?php
 
 // if the register button is clicked
-	$id = $_POST['id'];
-	$program = $_POST['program'];
-
+	// $id = $_POST['id'];
+	// $program = $_['program'];
+//This is the page that has the list of all the schools that share the program Accounting
+//list: ratings and school
   // connect to the database
   $dsn = "mysql:host=localhost;dbname=chunmini_personal;charset=utf8mb4";
   $dbusername = "chunmini_angela";
@@ -21,27 +22,19 @@
 		<meta charset="utf-8" />
   </head>
 	<body>
-<?php	while($row = $stmt->fetch()) {
-	?>
-  <h1><a href="test.php<?php echo($row["id"])?>"><?php echo($row["program"])?></a></h1>
-	<h1><?php echo($row["school"])?></h1>
-	<h1><?php echo($row["department"])?></h1>
-<?php
-}
-?>
+
     <table>
       <tr>
     <th>School</th>
     <th>Rating</th>
   </tr>
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
+	<?php	while($row = $stmt->fetch()) {
+		?>
+	 <tr>
+    <td><?php echo($row["school"])?></td>
+    <td><?php echo($row["rating"])?></td>
   </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    </tr>
+<?}?>
 </table>
 <select>
   <option>
