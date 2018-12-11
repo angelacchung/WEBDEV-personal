@@ -1,4 +1,24 @@
+<?php
+session_start();
+if($_SESSION['logged-in'] == false){
+	$dsn = "mysql:host=localhost;dbname=chunmini_personal;charset=utf8mb4";
+  $dbusername = "chunmini_angela";
+  $dbpassword = "Z8c.N&]08u](";
 
+	$pdo = new PDO($dsn, $dbusername, $dbpassword);
+
+  $stmt = $pdo->prepare("INSERT INTO `users` (`email`, `password`)
+  VALUES ('$email', '$password');");
+  $stmt->execute();
+	?>
+	
+	)
+}else{
+
+
+}
+
+?>
 <!doctype html>
 <html>
 	<head>
@@ -11,10 +31,10 @@
     <header>
 		<nav>
 			<ul>
-				<li href="homepage.html">Home</li>
-				<li href="#">About</li>
-				<li href="#">Login</li>
-				<li href="#">Register</li>
+				<li><a href="homepage.html">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="login-page.html">Login</a></li>
+				<li><a href="register.html">Register</a></li>
 			</ul>
 		</nav>
 		</header>

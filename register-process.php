@@ -1,33 +1,35 @@
 <?php
-
+  
+//This is working
 // if the register button is clicked
-  $firstname = $_POST['firstname'];
-  $lastname = $_POST['lastname'];
-  $username = $_POST['username'];
   $email = $_POST['email'];
   $password = $_POST['password'];
-
-
   // connect to the database
-  $dsn = "mysql:host=localhost;dbname=browne9_Weedsite;charset=utf8mb4";
-  $dbusername = "browne9_weedsite";
-  $dbpassword = "g@5o4nFUJ7ha";
+  $dsn = "mysql:host=localhost;dbname=chunmini_personal;charset=utf8mb4";
+  $dbusername = "chunmini_angela";
+  $dbpassword = "Z8c.N&]08u](";
   // var_dump($_POST);
   $pdo = new PDO($dsn, $dbusername, $dbpassword);
+
+  $stmt = $pdo->prepare("INSERT INTO `users` (`email`, `password`)
+  VALUES ('$email', '$password');");
   $stmt->execute();
 
-
-
-    $stmt = $pdo->prepare("INSERT INTO `users` (`firstname`, `lastname`, `email`, `username`, `password`)
-    VALUES ('$firstname', '$lastname', '$email', '$username', '$password');");
-
-    $stmt->execute();
-    $_SESSION['username'] = $username;
-    $_SESSION['success'] = "You are now logged in";
-  // }
-
-
-  header("Location: homepage.php")
+//   if ($row= $stmt->fetch()){
+//     $_SESSION['logged-in'] = true;
+//     $_SESSION['email'] = $row['email'];
+//     $_SESSION['id'] = $row['id'];
+//     header("Location: homepage.php")
+// }
+// else{
+//   header("Location: login-page.html")
+// }
+  // $stmt->execute();
+  // $_SESSION['username'] = $username;
+  // $_SESSION['success'] = "You are now logged in";
+  // // }
+  //
+  header("Location: login-page.html")
 
 
  ?>
