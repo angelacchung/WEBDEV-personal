@@ -1,6 +1,6 @@
 <?php
-session_start();
-if($_SESSION['logged-in'] == false){
+// session_start();
+// if($_SESSION['logged-in'] == false){
 	$dsn = "mysql:host=localhost;dbname=chunmini_personal;charset=utf8mb4";
   $dbusername = "chunmini_angela";
   $dbpassword = "Z8c.N&]08u](";
@@ -11,14 +11,14 @@ if($_SESSION['logged-in'] == false){
   VALUES ('$email', '$password');");
   $stmt->execute();
 	?>
-	
+	<!--
 	)
 }else{
 
 
 }
 
-?>
+?> -->
 <!doctype html>
 <html>
 	<head>
@@ -31,13 +31,14 @@ if($_SESSION['logged-in'] == false){
     <header>
 		<nav>
 			<ul>
-				<li><a href="homepage.html">Home</a></li>
+				<li><a href="homepage.php">Home</a></li>
 				<li><a href="#">About</a></li>
 				<li><a href="login-page.html">Login</a></li>
 				<li><a href="register.html">Register</a></li>
 			</ul>
 		</nav>
 		</header>
+		<div id="cont">
 		<h1>Welcome!</h1>
 <div>
 	<p>Choose to search by...</p>
@@ -46,6 +47,7 @@ if($_SESSION['logged-in'] == false){
 <a href="program.html">Programs</a>
 <a href="university.html">Schools</a>
 <a href="showall.html">Show All</a>
+</div>
 </div>
 	</body>
 	<footer>

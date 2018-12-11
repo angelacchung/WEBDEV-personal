@@ -10,7 +10,7 @@
   $dbpassword = "Z8c.N&]08u](";
   // var_dump($_POST);
   $pdo = new PDO($dsn, $dbusername, $dbpassword);
-	$stmt = $pdo->prepare("SELECT * FROM `information`");
+	$stmt = $pdo->prepare("SELECT * FROM `information` WHERE `program` = 'Accounting' ");
   $stmt->execute();
  ?>
 
@@ -21,8 +21,14 @@
 		<meta charset="utf-8" />
   </head>
 	<body>
-
-  <h1><?php echo($row["program"]);?>yes</h1>
+<?php	while($row = $stmt->fetch()) {
+	?>
+  <h1><a href="test.php<?php echo($row["id"])?>"><?php echo($row["program"])?></a></h1>
+	<h1><?php echo($row["school"])?></h1>
+	<h1><?php echo($row["department"])?></h1>
+<?php
+}
+?>
     <table>
       <tr>
     <th>School</th>
