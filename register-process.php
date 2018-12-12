@@ -1,5 +1,5 @@
 <?php
-  
+
 //This is working
 // if the register button is clicked
   $email = $_POST['email'];
@@ -29,7 +29,7 @@
   // $_SESSION['success'] = "You are now logged in";
   // // }
   //
-  header("Location: login-page.html")
+  header("Location: login-page.php")
 
 
  ?>

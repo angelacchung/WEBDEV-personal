@@ -7,21 +7,21 @@ header{
   position: sticky;
   top: 0;
   }
-
+header ul li{
+}
 nav
   {
     float:left;
   }
 nav ul
-  {   text-align: center;
+  {
       font-size: 20px;
       position: relative;
-
+      left:590px;
       margin:10px;
       padding:0;
   }
   .list{
-    
     color: white;
     text-decoration: none;
   }
@@ -29,6 +29,7 @@ nav li
   {
     display: inline-block;
     margin-left: 70px;
+    left:330px;
     padding-top: 23px;
     position: relative;
 

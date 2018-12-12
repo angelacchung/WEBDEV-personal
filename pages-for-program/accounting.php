@@ -39,7 +39,9 @@
 
 		<h1><?php echo($row["program"])?>
 		</h1>
-    <table>
+    <section id="container">
+    </section>
+    <table id="table">
       <tr>
 		<th>Rating</th>
     <th>School</th>
@@ -61,7 +63,6 @@
   </tr>
 <?}?>
 </table>
-
 </div>
 <script src="js/js.js"></script>
 	</body>

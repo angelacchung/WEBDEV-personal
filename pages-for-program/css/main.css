@@ -2,6 +2,9 @@ body{
   font-family: 'Roboto', sans-serif;
   margin:0;
 }
+.reviews{
+  margin:20px;
+}
 h1{
   position: relative;
   margin:10px;

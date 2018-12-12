@@ -1,6 +1,6 @@
 <?php
-var_dump($_POST);
-
+// var_dump($_POST);
+//inserting rating into a specific row
   $rating = $_POST['rating'];
   $review = $_POST['review'];
   // $school = $_POST['school'];
@@ -12,10 +12,13 @@ var_dump($_POST);
   $dbpassword = "Z8c.N&]08u](";
   // var_dump($_POST);
   $pdo = new PDO($dsn, $dbusername, $dbpassword);
-  // $stmtt = $pdo->prepare("SELECT `rating`, `id` FROM `information`");
-  // $stmtt->execute();
-  $stmt = $pdo->prepare("INSERT INTO `reviews` (`id`, `title`, `rating`, `review`, `school`, `program`)
-  VALUES (NULL, '$title', '$rating', '$review', '$school', '$program'); ");
+
+  $stmt = $pdo->prepare("INSERT INTO `information` (`id`,`rating`)
+  VALUES (NULL, '$rating'); ");
+
+  //working
+  // $stmt = $pdo->prepare("INSERT INTO `reviews` (`id`, `title`, `rating`, `review`, `school`, `program`)
+  // VALUES (NULL, '$title', '$rating', '$review', '$school', '$program'); ");
 
   $stmt->execute();
   // header("Location: homepage.php");

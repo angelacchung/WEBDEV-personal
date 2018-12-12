@@ -9,8 +9,8 @@
 			<h3>Business</h3>
 		<ul>
 			<li><a href="pages-for-program/accounting.php">Accounting</a></li>
-			<li><a href="#">Economics</a></li>
-		</ul>
+			<!-- <li><a href="#">Economics</a></li> -->
+		<!-- </ul>
 		</div>
 		<div>
 			<h3>Sciences</h3>
@@ -27,7 +27,7 @@
 		<ul>
 			<li><a href="#">English</a></li>
 		</ul>
-		</div>
+		</div> -->
 
 	</body>
 	<?php
