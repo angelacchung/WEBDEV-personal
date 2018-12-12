@@ -20,5 +20,9 @@
 		</div>
 
 	</body>
+	<?php
+		include('footer.php')
+	?>
+
 </html>
 <!--  use php for this-->

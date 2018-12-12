@@ -40,4 +40,6 @@ $row = $stmt->fetch();
 
   </div>
   	</body>
-  </html>
+		<?php
+		  include('footer.php')
+		?>

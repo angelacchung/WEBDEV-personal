@@ -13,4 +13,8 @@ include('header.php')
       This is a website that is dedicated to creating an easy
     </p>
 </body>
+<?php
+  include('footer.php')
+?>
+
 </html>

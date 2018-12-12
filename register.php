@@ -17,4 +17,6 @@ include('header.php')
       <input id = "submit" type='submit' text="log in">
   </form>
 </body>
-</html>
+<?php
+  include('footer.php')
+?>

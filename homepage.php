@@ -37,11 +37,6 @@
 </div>
 </span>
 	</body>
-	<footer>
-		<ul>
-			<li href="#">link</li>
-			<li href="#">link</li>
-			<li href="#">link</li>
-		</ul>
-	</footer>
-</html>
+	<?php
+		include('footer.php')
+	?>
