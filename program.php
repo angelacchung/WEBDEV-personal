@@ -1,7 +1,7 @@
 <?php
 	include('header.php')
 ?>
-		<link rel="stylesheet" type="text/css" href="css/program.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
 
 	<body>
     <h1>Search by program name</h1>

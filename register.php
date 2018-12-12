@@ -1,3 +1,7 @@
+<?php
+include('header.php')
+?>
+<link rel="stylesheet" type="text/css" href="css/main.css" />
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,12 +9,12 @@
 </head>
 <body>
   <h1>Register</h1>
-  <br>
+      <form class="form" method='POST' action='register-process.php'>
+        <div id = "email">E-mail: <input type='email' name="email" placeholder="example@example.com" /></div>
 
-    <form class="form" method='POST' action='register-process.php'>
-      Email: <input type='email' name="email" />
-      Password: <input type='password' name="password" />
-    <input type='submit'>
+        <div id = "password">Password: <input type='password' name="password" placeholder="Your password"/></div>
+
+      <input id = "submit" type='submit' text="log in">
   </form>
 </body>
 </html>
