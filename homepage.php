@@ -19,34 +19,21 @@
 }
 
 ?> -->
-<!doctype html>
-<html>
-	<head>
-		<title>Homepage</title>
-		<meta charset="utf-8" />
+<?php
+	include('header.php')
+?>
 		<link rel="stylesheet" type="text/css" href="css/homepage.css" />
 		<!-- <script src="js/js.js" type="text/javascript"></script> -->
-	</head>
-	<body>
-    <header>
-		<nav>
-			<ul>
-				<li><a href="homepage.php">Home</a></li>
-				<li><a href="about.html">About</a></li>
-				<li><a href="login-page.html">Login</a></li>
-				<li><a href="register.html">Register</a></li>
-			</ul>
-		</nav>
-		</header>
+
 		<div id="cont">
 		<h1>Welcome!</h1>
 <div>
 	<p>Choose to search by...</p>
 </div>
 <div>
-<a href="program.html">Programs</a>
-<a href="university.html">Schools</a>
-<a href="showall.html">Show All</a>
+<a href="program.php">Programs</a>
+<a href="university.php">Schools</a>
+<a href="showall.php">Show All</a>
 </div>
 </div>
 	</body>

@@ -1,10 +1,8 @@
-<!doctype html>
-<html>
-	<head>
-		<title>Program list</title>
-		<meta charset="utf-8" />
+<?php
+	include('header.php')
+?>
 		<link rel="stylesheet" type="text/css" href="css/program.css" />
-  </head>
+
 	<body>
     <h1>Search by program name</h1>
 		<div>

@@ -11,40 +11,58 @@
   $dbpassword = "Z8c.N&]08u](";
   // var_dump($_POST);
   $pdo = new PDO($dsn, $dbusername, $dbpassword);
-	$stmt = $pdo->prepare("SELECT * FROM `information` WHERE `program` = 'Accounting' ");
+	$stmt = $pdo->prepare("SELECT * FROM `information` WHERE `school` = 'Accounting' ");
   $stmt->execute();
+	$row = $stmt->fetch();
+ ?>
+ <?php
+ 	include('header.php')
  ?>
 
-<!doctype html>
-<html>
-	<head>
-		<title>Program list</title>
-		<meta charset="utf-8" />
-  </head>
-	<body>
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
 
+	<body>
+<div class="cont">
+
+  <div id="divId"></div>
+    <form  action='process-order.php' method='post'>
+      <select name ="order" id="descend">
+        <option>null</option>
+        <option value="desc">Highest</option>
+        <option value="asc">Lowest</option>
+      </select>
+    <input type="text" name="ratingg"/>
+    <button type="submit">submit</button>
+<!-- <p id="descend" value="desc">hello</p> -->
+
+  </form>
+		<h1><?php echo($row["program"])?>
+		</h1>
     <table>
       <tr>
+		<th>Rating</th>
     <th>School</th>
-    <th>Rating</th>
+		<!-- <th><select>
+		  <option>
+		    highest to lowest
+		  </option>
+		  <option>
+		    lowest to highest
+		  </option>
+
+		</select></th> -->
   </tr>
 	<?php	while($row = $stmt->fetch()) {
 		?>
 	 <tr>
-    <td><?php echo($row["school"])?></td>
-    <td><?php echo($row["rating"])?></td>
+		 <td id="r"><?php echo($row["rating"])?></td>
+    <td id="s"><?php echo($row["school"])?></td>
   </tr>
 <?}?>
 </table>
-<select>
-  <option>
-    highest to lowest
-  </option>
-  <option>
-    lowest to highest
-  </option>
 
-</select>
+</div>
+<script src="js/js.js"></script>
 	</body>
 </html>
 <!--  use php for this-->

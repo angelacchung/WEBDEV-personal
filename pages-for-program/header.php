@@ -9,9 +9,9 @@
 <nav>
   <ul>
     <li><a class="list" href="homepage.php">Home</a></li>
-    <li><a class="list" href="about.php">About</a></li>
-    <li><a class="list" href="login-page.php">Login</a></li>
-    <li><a class="list" href="register.php">Register</a></li>
+    <li><a class="list" href="about.html">About</a></li>
+    <li><a class="list" href="login-page.html">Login</a></li>
+    <li><a class="list" href="register.html">Register</a></li>
   </ul>
 </nav>
 </header>
