@@ -9,10 +9,10 @@ $dbpassword = "Z8c.N&]08u](";
 $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
 if($order == "desc"){
-  $stmttwo = $pdo->prepare("SELECT `rating`, `school` FROM `information` ORDER BY `rating` ASC"
+  $stmttwo = $pdo->prepare("SELECT `rating` FROM `reviews` ORDER BY `rating` ASC"
 );
 }else{$order ==
-  $stmttwo = $pdo->prepare("SELECT `rating`, `school` FROM `information` ORDER BY `rating` DESC"
+  $stmttwo = $pdo->prepare("SELECT `rating` FROM `reviews` ORDER BY `rating` DESC"
 );
 }
 $stmttwo->execute();

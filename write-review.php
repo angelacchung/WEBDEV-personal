@@ -11,9 +11,9 @@
 <body>
 <h1>Write a review</h1>
 <form class="form" method='POST' action='process-review.php'>
-  <input type="hidden" value="<?php echo($row["id"]==1); ?>" name="id"/>
+  <!-- <input type="hidden" value="<?php //echo($row["id"]==1); ?>" name="id"/> -->
   <p>title</p>
-  <input type="text" name="text">
+  <input type="text" name="review">
   <p>choose a rating</p>
   <div>
   <input type="radio" value=1 name="rating">1
@@ -29,8 +29,8 @@
 </form>
 
 </body>
-<?php
-  include('footer.php')
-?>
 
 </html>
+<?php
+  // include('footer.php')
+?>

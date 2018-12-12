@@ -25,17 +25,18 @@
 		<link rel="stylesheet" type="text/css" href="css/homepage.css" />
 		<!-- <script src="js/js.js" type="text/javascript"></script> -->
 
-		<span id="cont">
-		<h1>Welcome!</h1>
+		<div id="cont">
+		<h1>Find the right education for you</h1>
+<div class="cont">
+	<p>Choose to search a program by</p>
+
 <div>
-	<p>Choose to search by...</p>
-</div>
-<div>
-<a href="program.php">Programs</a>
-<a href="university.php">Schools</a>
+<a href="program.php">Program name</a>
+<a href="university.php">School names</a>
 <a href="showall.php">Show All</a>
 </div>
-</span>
+</div>
+</div>
 	</body>
 	<?php
 		include('footer.php')

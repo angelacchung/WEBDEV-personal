@@ -1,7 +1,16 @@
 /*  connected*/
+.cont{
+  margin-top: 30px;
+}
 #cont{
+  margin-top: 140px;
   position:relative;
   text-align: center;
+}
+div p {
+
+  margin:2%;
+  position: relative;
 }
 div a{
   margin-left:15px;

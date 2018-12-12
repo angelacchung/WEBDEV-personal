@@ -11,7 +11,7 @@
   $dbpassword = "Z8c.N&]08u](";
   // var_dump($_POST);
   $pdo = new PDO($dsn, $dbusername, $dbpassword);
-	$stmt = $pdo->prepare("SELECT * FROM `information` WHERE `school` = 'Accounting' ");
+	$stmt = $pdo->prepare("SELECT * FROM `information` WHERE `program` = 'Accounting' ");
   $stmt->execute();
 	$row = $stmt->fetch();
  ?>
@@ -22,20 +22,21 @@
 		<link rel="stylesheet" type="text/css" href="css/main.css" />
 
 	<body>
+    <div id="divId"></div>
+            <form  action='process-order.php' method='post'>
+              <select name ="order" id="descend">
+                <option>null</option>
+                <option value="desc">descend</option>
+                <option value="asc">ascend</option>
+              </select>
+            <!-- <input type="text" name="ratingg"/>
+            <button type="submit">submit</button> -->
+    <!-- <p id="descend" value="desc">hello</p> -->
+
+          </form>
 <div class="cont">
 
-  <div id="divId"></div>
-    <form  action='process-order.php' method='post'>
-      <select name ="order" id="descend">
-        <option>null</option>
-        <option value="desc">Highest</option>
-        <option value="asc">Lowest</option>
-      </select>
-    <input type="text" name="ratingg"/>
-    <button type="submit">submit</button>
-<!-- <p id="descend" value="desc">hello</p> -->
 
-  </form>
 		<h1><?php echo($row["program"])?>
 		</h1>
     <table>
@@ -56,7 +57,7 @@
 		?>
 	 <tr>
 		 <td id="r"><?php echo($row["rating"])?></td>
-    <td id="s"><?php echo($row["school"])?></td>
+    <td id="s"><a href="view.php"><?php echo($row["school"])?></a></td>
   </tr>
 <?}?>
 </table>

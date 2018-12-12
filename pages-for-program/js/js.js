@@ -11,15 +11,14 @@ function de(e){
 // console.log(yi)
     for(var i=0; i<yi.length; i++){
       console.log(yi[i]);
-      var rat = document.getElementById("r");
+
+      var newPTag = document.createElement("p");
+
       var textNode = document.createTextNode(yi[i].rating);
-      // var newPTag = document.createElement("p");
-      //
-      // var textNode = document.createTextNode(yi[i].rating);
-      //
-      // newPTag.appendChild(textNode);
-      //
-      // sectionContainer.appendChild(newPTag);
+
+      newPTag.appendChild(textNode);
+
+      sectionContainer.appendChild(newPTag);
 }
 }
 }
