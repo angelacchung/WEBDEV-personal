@@ -1,9 +1,9 @@
 <?php
 	include('header.php')
 ?>
-<link rel="stylesheet" type="text/css" href="css/university.css" />
+<link rel="stylesheet" type="text/css" href="css/main.css" />
 
-    <h1>Search by school name</h1>
+    <h1 id="unisearch">Search by school name</h1>
 		<div>
 			<h3>Schools</h3>
 		<ul>

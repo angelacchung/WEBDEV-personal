@@ -7,6 +7,7 @@
     <h1>Search by program name</h1>
 		<div>
 			<h3>Business</h3>
+<div id="plist">
 		<ul>
 			<li><a href="pages-for-program/accounting.php">Accounting</a></li>
 			<!-- <li><a href="#">Economics</a></li> -->
@@ -28,7 +29,8 @@
 			<li><a href="#">English</a></li>
 		</ul>
 		</div> -->
-
+</ul>
+</div>
 	</body>
 	<?php
 		include('footer.php')

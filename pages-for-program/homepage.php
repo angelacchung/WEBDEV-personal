@@ -22,8 +22,8 @@
 <?php
 	include('header.php')
 ?>
-		<link rel="stylesheet" type="text/css" href="css/homepage.css" />
-		<!-- <script src="js/js.js" type="text/javascript"></script> -->
+		<!-- <link rel="stylesheet" type="text/css" href="css/homepage.css" /> -->
+		<script src="js/js.js" type="text/javascript"></script>
 
 		<div id="cont">
 		<h1>Find the right education for you</h1>

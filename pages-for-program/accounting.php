@@ -36,7 +36,7 @@
           </form>
 <div class="cont">
 
-
+<a href="../write-review.php">rate this</a>
 		<h1><?php echo($row["program"])?>
 		</h1>
     <section id="container">
