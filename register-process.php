@@ -2,6 +2,7 @@
 
 //This is working
 // if the register button is clicked
+  $id = $_POST['id'];
   $email = $_POST['email'];
   $password = $_POST['password'];
   // connect to the database
@@ -11,8 +12,8 @@
   // var_dump($_POST);
   $pdo = new PDO($dsn, $dbusername, $dbpassword);
 
-  $stmt = $pdo->prepare("INSERT INTO `users` (`email`, `password`)
-  VALUES ('$email', '$password');");
+  $stmt = $pdo->prepare("INSERT INTO `users` (`id`,`password`,`email`)
+  VALUES ('$id','$password','$email');");
   $stmt->execute();
 
 //   if ($row= $stmt->fetch()){
@@ -29,7 +30,10 @@
   // $_SESSION['success'] = "You are now logged in";
   // // }
   //
-  header("Location: login-page.php")
+  echo('{"success":
+    "true"
+  }');
+  // header("Location: login-page.php")
 
 
  ?>

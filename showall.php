@@ -13,8 +13,10 @@ $dbpassword = "Z8c.N&]08u](";
   // var_dump($_POST);
 $pdo = new PDO($dsn, $dbusername, $dbpassword);
 $stmt = $pdo->prepare("SELECT * FROM `information` ORDER BY `school` ASC");
+$stmttwo = $pdo->prepare("SELECT * FROM `reviews` ");
 $stmt->execute();
-// $row = $stmt->fetch();
+$stmttwo->execute();
+$row = $stmttwo->fetch();
   ?>
   <?php
  include('header.php')

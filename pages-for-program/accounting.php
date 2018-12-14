@@ -1,5 +1,4 @@
 <?php
-
 // if the register button is clicked
 	// $id = $_POST['id'];
 	// $program = $_['program'];
@@ -11,16 +10,15 @@
   $dbpassword = "Z8c.N&]08u](";
   // var_dump($_POST);
   $pdo = new PDO($dsn, $dbusername, $dbpassword);
-	$stmt = $pdo->prepare("SELECT * FROM `information` WHERE `program` = 'Accounting' ");
+	$stmt = $pdo->prepare("SELECT AVG(rating)
+FROM `information` JOIN `reviews`ON `information`.`reviewid` = `reviews`.`id` WHERE `school` = 'McMaster University'");
+
   $stmt->execute();
-	$row = $stmt->fetch();
  ?>
  <?php
  	include('header.php')
  ?>
-
-		<link rel="stylesheet" type="text/css" href="css/main.css" />
-
+<link rel="stylesheet" type="text/css" href="css/main.css" />
 	<body>
     <div id="divId"></div>
             <form  action='process-order.php' method='post'>
@@ -32,37 +30,31 @@
             <!-- <input type="text" name="ratingg"/>
             <button type="submit">submit</button> -->
     <!-- <p id="descend" value="desc">hello</p> -->
-
           </form>
 <div class="cont">
-
-<a href="../write-review.php">rate this</a>
-		<h1><?php echo($row["program"])?>
+  <?php
+	while($row = $stmt->fetch()) {
+	?>
+<!--	test: ?php echo($row["id"]);?> -->
+	<h3>Title:<?php echo($row["school"]); ?></h3>
+	<p>Author:<?php echo($row["program"]); ?></p>
+  <p><?php echo($row["rating"])?></p>
+  <p><?php echo($row["AVG(rating)"])?></p>
+			<?php
+		}
+			?>
+		<h1>Accounting
 		</h1>
+    <?php while($row = $stmt->fetch()) {
+    ?>
+<p><?php echo($row["AVG(rating)"])?></p>
+<?php
+}
+?>
+    <a id="ratethis" href="../write-review.php">rate this</a>
     <section id="container">
     </section>
-    <table id="table">
-      <tr>
-		<th>Rating</th>
-    <th>School</th>
-		<!-- <th><select>
-		  <option>
-		    highest to lowest
-		  </option>
-		  <option>
-		    lowest to highest
-		  </option>
 
-		</select></th> -->
-  </tr>
-	<?php	while($row = $stmt->fetch()) {
-		?>
-	 <tr>
-		 <td id="r"><?php echo($row["rating"])?></td>
-    <td id="s"><a href="view.php"><?php echo($row["school"])?></a></td>
-  </tr>
-<?}?>
-</table>
 </div>
 <script src="js/js.js"></script>
 	</body>

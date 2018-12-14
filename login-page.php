@@ -9,7 +9,8 @@ include('header.php')
 </head>
 <body>
   <h1>Log in</h1>
-  <form class="form" method='POST' action='process-login.php'>
+  <form id="form" method='POST' action='process-login.php'>
+
 
       <div id = "email">E-mail: <input type='email' name="email" placeholder="example@example.com" /></div>
 
@@ -17,7 +18,10 @@ include('header.php')
 
       <!-- <button><img id="login" type ='submit' src="buttons/login.png"></button> -->
     <input id = "submit" type='submit' text="log in">
+
   </form>
+
+
 </body>
 <?php
   include('footer.php')

@@ -24,7 +24,7 @@ if($row = $stmt->fetch()){
 	//start session if valid and redirect to homepage
 	$_SESSION['logged-in'] = true;
 	$_SESSION['email'] = $row['email'];
-	$_SESSION['userid'] = $row['userid'];
+	// $_SESSION['userid'] = $row['userid'];
 
 	header("Location: homepage.php");
 
