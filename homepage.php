@@ -24,18 +24,26 @@ if($_SESSION['logged-in'] == false){
 		<!-- <script src="js/js.js" type="text/javascript"></script> -->
 
 		<div id="cont">
-		<h1>Find the right education for you</h1>
-<div class="cont">
-	<p>Choose to search a program by</p>
+      <h1>Find the right education for you</h1>
+	<div class="cont">
+		<p>See what others are saying about university programs in Ontario</p>
 
-<div>
-<a href="program.php">Program name</a>
-<a href="university.php">School names</a>
-<a href="showall.php">Show All</a>
+	<div>
+	<a href="program.php">Get started</a>
+<!-- <a href="university.php">School names</a>
+<a href="showall.php">Show All</a> -->
 </div>
 </div>
 </div>
 	</body>
+  <footer>
+    <ul>
+      <li href="#">Contact</li>
+      <li href="#">Help</li>
+      <li href="#">Terms and conditions</li>
+    </ul>
+  </footer>
+  </html>
 	<?php
 }
 else
@@ -64,16 +72,24 @@ else
 			<div id="cont">
 			<h1>Find the right education for you</h1>
 	<div class="cont">
-		<p>Choose to search a program by</p>
+		<p>See what others are saying about university programs in Ontario</p>
 
 	<div>
-	<a href="program.php">Program name</a>
-	<a href="university.php">School names</a>
-	<a href="showall.php">Show All</a>
+	<a href="program.php">Get started</a>
+	<!-- <a href="university.php">School names</a>
+	<a href="showall.php">Show All</a> -->
 	</div>
 	</div>
 	</div>
 		</body>
+    <footer>
+      <ul>
+        <li href="#">Contact</li>
+        <li href="#">Help</li>
+        <li href="#">Terms and conditions</li>
+      </ul>
+    </footer>
+    </html>
 <?php
 }
 ?>

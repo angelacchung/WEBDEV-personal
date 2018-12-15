@@ -59,7 +59,7 @@ nav li::before
   margin-top: 30px;
 }
 #cont{
-  margin-top: 140px;
+  margin-top: 300px;
   position:relative;
   text-align: center;
 }
@@ -99,17 +99,23 @@ body{
   margin:0;
   padding:0;
 }
-/* footer{
-  position:absolute;
-  background-color: black;
-  width:100%;
-  bottom:0;
-  height:auto;
-  /* position: -webkit-sticky;
-  position: sticky;
-  bottom: 0; */
+h1 {
+  font-size: 70px;
+  text-align: center;
+  color: blue;
+}
+p{
+  font-size: 25px;
+  text-align: center;
 }
 
+footer{
+  background-color: black;
+  width:100%;
+  position: absolute;
+  bottom: 0;
+}
+/*
 footer ul{
   list-style:none;
   }
@@ -120,15 +126,3 @@ footer ul li{
   margin-left:30px;
   margin:10px;
 } */
-
-
-
-h1 {
-  font-size: 70px;
-  text-align: center;
-  color: blue;
-}
-p{
-  font-size: 25px;
-  text-align: center;
-}

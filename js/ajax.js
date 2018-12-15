@@ -1,5 +1,11 @@
 var myRequest = new XMLHttpRequest;
+
+
+var thank = document.getElementById("thank");
+ thank.style.display = "none";
+
 var submitButton = document.getElementById("submit");
+
 
 submitButton.addEventListener('click', submitForm,false);
 function submitForm(e){
@@ -34,6 +40,6 @@ function erase(){
   eraseit.style.display="none";
   }
   function thanks(){
-    document.getElementById("thankyou").innerHTML = "Login";
-
+    document.getElementById("thank").innerHTML = "Login";
+		thank.style.display="block";
   }

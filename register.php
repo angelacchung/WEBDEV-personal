@@ -9,6 +9,7 @@ include('header.php')
 </head>
 <body>
   <h1>Register</h1>
+
       <!-- <form class="form" method='POST' > -->
       <div id="ajax">
   <div id="form" method="POST" >
@@ -20,9 +21,10 @@ include('header.php')
     </div>
   </div>
   <!-- </form>  -->
+<div id="move"><a id="thank" href="login-page.php"></a><div>
+  <script src="js/ajax.js" ></script>
 
-  <script src="js/ajax.js" type="text/javascript"></script>
-  <a href="login-page.php" id="thankyou"><a>
+
 </body>
 <?php
   include('footer.php')

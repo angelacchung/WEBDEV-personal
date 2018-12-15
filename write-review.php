@@ -10,12 +10,25 @@
 </head>
 <body>
 <h1>Write a review</h1>
-<form class="form" method='POST' action='process-review.php'>
+<form id="form" method='POST' action='process-review.php'>
   <!-- <input type="hidden" value="<?php //echo($row["id"]==1); ?>" name="id"/> -->
-  <p>Title</p>
+  <div>
+    <h3 class="review">School</h3>
+    McMaster University:<input type="radio" name="school" value="McMaster University">
+    York University:<input type="radio" name="school" value="York university">
+    University of Toronto:<input type="radio" name="school" value="University of Toronto">
+    <!-- Wilfred Laurier University:<input type="radio" name="school" value="Wilfred Laurier University"> -->
+    Queens University:<input type="radio" name="school" value="Queens University">
+    <!-- Ryerson University:<input type="radio" name="school" value="Ryerson University">
+    University of Waterloo:<input type="radio" name="school" value="University of Waterloo"> -->
+  </div>
+  <p>Your title</p>
   <input type="text" name="title">
-  <p>review</p>
-  <input id="content" type="text" name="content">
+  <p>Your review</p>
+  <textarea id="content" rows="4" cols="50" name="content" type="text">
+  </textarea>
+  <!-- <input id="content" type="text" name="content"> -->
+
   <p>What is your rating?</p>
   <div>
   <input class="rbtn" type="radio" value=1 name="rating">1
@@ -24,22 +37,15 @@
   <input class="rbtn" type="radio" value=4 name="rating">4
   <input class="rbtn" type="radio" value=5 name="rating">5
   </div>
+
   <div>
-    McMaster University:<input type="radio" name="school" value="McMaster University">
-    York University:<input type="radio" name="school" value="York university">
-    University of Toronto:<input type="radio" name="school" value="University of Toronto">
-    Wilfred Laurier University:<input type="radio" name="school" value="Wilfred Laurier University">
-    Queens University:<input type="radio" name="school" value="Queens University">
-    Ryerson University:<input type="radio" name="school" value="Ryerson University">
-    University of Waterloo:<input type="radio" name="school" value="University of Waterloo">
-  </div>
-  <div>
+    <h3 class="review">Program</h3>
     Accounting:<input type="radio" name="program" value="Accounting">
-    Biochemistry:<input type="radio" name="program" value="Biochemistry">
-    Biology:<input type="radio" name="program" value="Biology">
-    Chemistry:<input type="radio" name="program" value="Chemistry">
+    <!-- Biochemistry:<input type="radio" name="program" value="Biochemistry"> -->
+    <!-- Biology:<input type="radio" name="program" value="Biology"> -->
+    <!-- Chemistry:<input type="radio" name="program" value="Chemistry"> -->
     Computer Science:<input type="radio" name="program" value="Computer Science">
-    Economics:<input type="radio" name="program" value="Economics">
+    <!-- Economics:<input type="radio" name="program" value="Economics"> -->
     English:<input type="radio" name="program" value="English">
   </div>
   <input id = "submit" type="submit">
@@ -47,6 +53,13 @@
 
 </body>
 
+<footer class="footer">
+  <ul>
+    <li href="#">Contact</li>
+    <li href="#">Help</li>
+    <li href="#">Terms and conditions</li>
+  </ul>
+</footer>
 </html>
 <?php
   // include('footer.php')

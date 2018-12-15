@@ -1,3 +1,45 @@
+#move{
+  text-align: center;
+margin-left: 48%;
+margin-right:10%;
+}
+#thank{
+  text-decoration: none;
+  background-color: blue;
+  border-radius: 40px;
+  color:white;
+  padding:10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width:80px;
+  text-align: center;
+}
+.noline{
+  text-decoration: none;
+  background-color: blue;
+  border-radius: 40px;
+  color:white;
+  padding:10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width:100%;
+  position: relative;
+  margin:10px;
+  margin-top: 50px;
+}
+.school{
+  margin:40px;
+}
+.subject{
+  color:blue;
+  font-size: 30px;
+  text-decoration: underline;
+  margin: 40px;
+}
+#slist{
+  margin-top:100px;
+  text-align: center;
+}
 .rbtn{
 margin:10px;
 }
@@ -70,6 +112,11 @@ h3{
   font-size: 40px;
   text-decoration: underline;
 }
+.review{
+  text-align:center;
+  color:teal;
+  font-size:20px
+}
 li{
   display: inline;
   list-style: none;
@@ -83,6 +130,9 @@ body{
   text-align: center;
   margin:10px;
   margin-top: 30px;
+}
+.space{
+  margin-top:100px;
 }
 #submit{
   background-color:black;
@@ -116,6 +166,9 @@ ul{
   text-align: center;
   color:blue;
   font-size: 50px;
+}
+#content{
+  padding:10px;
 }
 .cont{
   flex-wrap: wrap;
